@@ -4,5 +4,5 @@ LABEL maintainer "ivanilsonz@gmail.com"
 
 ENV PATH="$PATH:/root/.dotnet/tools"
 
-RUN apt update && apt install -y default-jre unzip \
+RUN apt update && apt install -y default-jre unzip make \
     && dotnet tool install --global dotnet-sonarscanner
